@@ -12,19 +12,17 @@ const last_posts = posts.slice(0, 3);
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <div class="text-5xl font-bold">I'm Victor Akinyemi</div>
+    <div class="text-3xl py-3 font-bold">  Graphic Design/Digital Marketing Guru</div>
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
+        I'm a passionate digital marketer and graphic designer, driven by a love for crafting innovative and visually stunning designs. With a keen eye for detail and a knack for storytelling, I specialize in creating impactful brand identities, engaging digital experiences, and effective marketing strategies.
       </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
+      <a class="btn" href="https://docs.google.com/document/d/1u54Ebh3TOd5Y2OhePgtjg0CqasA6nZc5JfNJA04AmkY/edit?usp=sharing" target="_blank"> Look Through My CV!</a>
+      <a href="https://www.linkedin.com/in/victor-akinyemi-928122333/" target="_blank" class="btn btn-outline ml-5">
+        Check Me Out On LinkedIn
       </a>
     </div>
   </div>
@@ -34,45 +32,16 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Breathe Easy, Cost & Tips to Professional Smoke Removal"
+    img="file:///C:/Users/HP/Downloads/images.webp"
+    desc="https://www.puroclean.com/schwenksville-pa-puroclean-lansdale/blog/breathe-easy-cost-tips-to-professional-smoke-removal-service/"
     url="#"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Graphics Design"
+    img="file:///C:/Users/HP/Downloads/graphic-design%20image.webp"
+    desc="https://docs.google.com/document/d/1V_9dm_CCTVX_f3bnGmZB7UtHLrQCeugpNG3UZGi5clg/edit?usp=sharing"
     url="#"
-    badge="FOSS"
   />
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + createSlug(post.data.title, post.slug)}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
 </BaseLayout>
